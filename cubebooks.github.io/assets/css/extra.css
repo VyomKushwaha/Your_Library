@@ -1,0 +1,117 @@
+.dropbtn 
+{
+    padding: 16px;
+    font-size: 26px;
+    border: 10px;
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+    }
+
+#myInput 
+{
+    box-sizing: border-box;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    color: rgb(59, 59, 59);
+    font-size: 20px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border: 1.5px solid #04AA6d ;
+}
+
+#myTable 
+{
+border-collapse: collapse;
+width: 100%;
+font-size: 18px;
+}
+
+#myTable th, #myTable td {
+text-align: left;
+padding: 12px;
+}
+
+#myTable tr {
+border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+background-color: #f1f1f1;
+}
+.show
+{
+    display: inline-block;
+}
+:root
+{
+    --btn:rgb(74,202,169);
+    --btn-shadow:rgba(74,202,169,0.5);
+}
+textarea
+{
+    margin-top: 30px;
+    height: 200px;
+    border-radius: 5px;
+}
+.send
+{
+    background:var(--btn);
+    color:white;
+    width:20%; 
+    box-shadow:0px 0px 1px 1px var(--btn-shadow);
+    border:none;
+    user-select:none;
+    border-radius:5px;
+    padding:6px 3px;
+}
+.send:active
+{
+    background:var(--btn);
+    animation:pulse 0.05s forwards;
+}
+.name
+{
+    border-radius:5px;
+    border:1px solid black;
+    padding:10px 0;
+}
+.email
+{
+    border-radius:5px;
+    border:1px solid black;
+    padding:10px 0;
+}
+.name:focus , textarea:focus,.email:focus
+{
+    outline:none;
+}
+.container
+{
+    display:flex;
+    justify-content: center;
+    width:min(1000px, 85%);
+    flex-flow:row wrap;
+    /* grid-template-columns:100%; */
+    /* grid-gap:5px; */
+    margin:0 auto;
+}
+.container>*:not(.send)
+{
+    width:100%;
+    margin-bottom:10px;
+}
+@keyframes pulse 
+{
+    from
+    {
+        box-shadow:0px 0px 1px 0px var(--btn-shadow);
+    }
+    to
+    {
+        box-shadow:0px 0px 0px 4px var(--btn-shadow);
+    }
+}

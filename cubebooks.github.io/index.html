@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<title>YourLibrary</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="animate.min.html">
+		<link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+		<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+		<meta name="keywords" content="YourLibrary, YourLibrary, cube, books, cube books, books pdf, kaustav, krish, abhishek, shishir, pdf, open-source" />
+		<meta name="author" content="YourLibrary" />
+		<meta name="description" content="It is an open-source platform. Now one does not have to surf web pages after webpages to find a pdf of a single. As YourLibrary by everyone's sides, one does not have to worry to find pdfs. YourLibrary is under development soon it will be the junction point of all books.">
+	</head>
+	<style>
+		.dropbtn 
+		{
+		  background-color: #ffffff;
+		  color: rgb(97, 97, 97);
+		  font-size: 17px;
+		  border: none;
+		}
+		
+		.dropdown 
+		{
+		  position: relative;
+		  display: inline-block;
+		}
+		
+		.dropdown-content 
+		{
+		  display: none;
+		  position: absolute;
+		  background-color: #f1f1f1;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+		
+		.dropdown-content a 
+		{
+		  color: #04AA6D;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+		
+		.dropdown-content a:hover {background-color: #ddd;}
+		
+		.dropdown:hover .dropdown-content {display: block;}
+		
+		.dropdown:hover .dropbtn {background-color: #ffffff;}
+		
+		:root
+		{
+			--btn:rgb(74,202,169);
+			--btn-shadow:rgba(74,202,169,0.5);
+		}
+		textarea
+		{
+			margin-top: 30px;
+			height: 200px;
+			border-radius: 5px;
+		}
+		.send
+		{
+			background:var(--btn);
+			color:white;
+			width:20%; 
+			box-shadow:0px 0px 1px 1px var(--btn-shadow);
+			border:none;
+			user-select:none;
+			border-radius:5px;
+			padding:6px 3px;
+		}
+		.send:active
+		{
+			background:var(--btn);
+			animation:pulse 0.05s forwards;
+		}
+		.name
+		{
+			border-radius:5px;
+			border:1px solid black;
+			padding:10px 0;
+		}
+		.email
+		{
+			border-radius:5px;
+			border:1px solid black;
+			padding:10px 0;
+		}
+		.name:focus , textarea:focus,.email:focus
+		{
+			outline:none;
+		}
+		.container
+		{
+			display:flex;
+			justify-content: center;
+			width:min(1000px, 85%);
+			flex-flow:row wrap;
+			/* grid-template-columns:100%; */
+			/* grid-gap:5px; */
+			margin:0 auto;
+		}
+		.container>*:not(.send)
+		{
+			width:100%;
+			margin-bottom:10px;
+		}
+		@keyframes pulse 
+		{
+			from
+			{
+				box-shadow:0px 0px 1px 0px var(--btn-shadow);
+			}
+			to
+			{
+				box-shadow:0px 0px 0px 4px var(--btn-shadow);
+			}
+		}
+
+		.blink
+		{
+			font-size:1rem;
+			margin-left:10%;
+			margin-right:13%;
+			font-family: Trebuchet MS;
+			font-weight: bold;
+			color: #ff0000;
+			animation: blink 500ms linear infinite ;
+		}
+		@keyframes blink
+		{
+			100%
+			{
+				color: #ffee00;
+			}
+		}
+
+		@import url('https://fonts.googleeapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap');
+	.wrapper
+	{
+		display: flex;
+		line-height: 90px;
+		height: 90px;
+		overflow: hidden;
+	}
+	.wrapper .static-txt
+	{
+		color: rgb(97, 97, 97);;
+		font-size: 1.2rem;
+		font-weight: 400;
+	}
+	.wrapper .dynamic-txts
+	{
+		margin-left: 15px;
+	}
+	.dynamic-txts li
+	{
+		list-style: none;
+                margin-left:-5px;
+		color: rgb(74,202,169);
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		font-size: 1.2rem;
+		font-weight: 500;
+		top: 0;
+		position: relative;
+		animation: slide 12s steps(4) infinite;
+	}
+	@keyframes slide
+	{
+		100%
+		{
+			top: -360px;
+		}
+	}
+	.dynamic-txts li
+	{
+		position: relative;
+	}
+	.dynamic-txts li::after
+	{
+		content: "";
+		position: absolute;
+		height:1.2rem;
+		width: 100%;
+                top:50%;
+                transform:translate(-5px,-50%);
+		background-color: white;
+		border-left: 2px solid rgb(74,202,169);
+		animation: typing 3s steps(20) infinite;
+	}
+	@keyframes typing
+	{
+		40%,
+		60%
+		{
+			left: calc(100% + 30px);
+		}
+		100%
+		{
+			left: 0;
+		}
+	}
+           @media only screen and (min-width:600px){
+              html{
+                font-size:25px;
+}
+}
+          @media only screen and (max-width:384px){
+            html{
+              font-size:14px;
+}
+}
+   	</style>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><a href="index-2.html"><img src="images/avatar.jpg" alt="" /></a></span>
+					<h1 id="logo"><a href="#header"><p class="animated zoomIn">YourLibrary</p></a></h1>
+					<p class="animated fadeInUp delay-1s">YOUR PERSONAL LIBRARY</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active"><p class="animated fadeInLeft">About</p></a></li>
+						<li><a href="#two"><p class="animated fadeInRight">BOOKS</p></a></li>
+					</ul>
+				</nav>
+				
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="image main" data-position="center">
+									<img src="images/banner.png" alt="" />
+								</div>
+								<div class="container">
+									<header class="major">
+										<h2 class="animated fadeInLeft">Welcome to <a href="index-2.html"><i>YourLibrary</i></a></h2>
+									</header>
+									<p class="animated fadeInRight">You don't need to buy books if you can find these books here.</p>
+								</div>
+								<div class="blink">
+									<span data-position="center">
+										<i><u>NOTICE:</u></i>
+										<br>
+										Hi Guys! Some Books is added, that may take some time.
+									</span>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h2 class="animated zoomIn"><b>BOOKS</b></h2>
+									<div class="wrapper">
+										<div class="static-txt"><i>Our Highlighted Books:</i></div>
+										<ul class="dynamic-txts">
+											<li><span><a href="https://drive.google.com/folderview?id=1XwKMlE1ZPJ8wU50DTI29ipMI73fD1fl4">Arihant JEE</a></span></li>
+											<li><span><a href="https://drive.google.com/folderview?id=1YBariOhH_8L2v0s7apO4bwWfoYCQC-Vs">Arihant NEET</a></span></li>
+											<li><span><a href="https://drive.google.com/folderview?id=1XwKMlE1ZPJ8wU50DTI29ipMI73fD1fl4">Arihant JEE</a></span></li>
+											<li><span><a href="https://drive.google.com/folderview?id=1YBariOhH_8L2v0s7apO4bwWfoYCQC-Vs">Arihant NEET</a></span></li>
+										</ul>
+									</div>
+									<ul class="feature-icons">						
+										<li class="solid icon fa-book">
+											<div class="dropdown">
+											<button class="dropbtn"><h4 class="animated fadeInRight">Physics Advance</h4></button>
+											<div class="dropdown-content">
+												<a href="Physics%20Books.html">Books</a>
+												<a href="Physics%20Notes.html">Poster</a>
+												<a href="Physics%20Notes.html">Physics Paper</a>
+											</div>
+											</div>
+										</li>										
+																	
+										<li class="solid icon fa-book">
+											<div class="dropdown">
+											<button class="dropbtn"><h4 class="animated fadeInRight">Biology</h4></button>
+											<div class="dropdown-content">
+												<a href="Biology%20Books.html">Books</a>
+												<a href="Biology%20Notes.html">Notes</a>
+												<a href="Biology%20Papers.html">Paper</a>
+											</div>
+											</div>
+										</li>										
+										
+										<li class="solid icon fa-book">
+											<div class="dropdown">
+											<button class="dropbtn"><h4 class="animated fadeInRight">JEE/NEET</h4></button>
+											<div class="dropdown-content">
+												<a href="Entrance%20Books.html">Books</a>
+											</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+
+						
+						<!-- three --> 
+						
+						</div> 
+
+					</div>
+
+				<!-- Footer -->
+					
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function sendReq()
+				{
+					var name=document.getElementsByClassName("name")[0].value;
+					var msg=document.getElementsByTagName("textarea")[0].value;
+					var email=document.getElementsByClassName("email")[0].value;
+					if([name.length,msg.length,email.length].includes(0))
+					{
+						alert("you must fill all the fields");
+					}
+					else
+					{
+						msg="feedback from "+name+"\n"+email+" :\n"+msg;
+						var xhttp=new XMLHttpRequest();
+						xhttp.open("GET.html",encodeURI("https://api.telegram.org/bot1785343477:AAGfO1PIpAwAKUu8BF6IkIgUgoTxPTJo-a0/sendMessage?chat_id=-1001262147694&text="+msg),true);
+						xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+						xhttp.send();
+						document.getElementsByClassName("name")[0].value="";
+						document.getElementsByTagName("textarea")[0].value="";
+						document.getElementsByClassName("email")[0].value="";
+						alert("thank you for your feedback !");
+					}
+				}
+			</script>
+			
+	</body>
+
+<!-- Mirrored from YourLibrary.github.io/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jun 2022 04:39:03 GMT -->
+</html>

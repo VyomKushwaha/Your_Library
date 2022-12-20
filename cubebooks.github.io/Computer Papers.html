@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	
+<!-- Mirrored from cubebooks.github.io/Computer Papers.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jun 2022 04:39:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<title>Computer Papers</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/extra.css" />
+		<link rel="stylesheet" href="animate.min.html">
+		<link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+		<link rel="stylesheet"href="../cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+		<script src="../code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="../code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><a href="index-2.html"><img src="images/avatar.jpg" alt="" /></a></span>
+					<h1 id="logo"><a href="#header"><p class="animated zoomIn">CubeBooks</p></a></h1>
+					<p class="animated fadeInUp delay-1s">YOUR PERSONAL LIBRARY</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one"><p class="animated fadeInRight">CISCE</p></a></li>
+						<li><a href="#two"><p class="animated fadeInLeft">CBSE</p></a></li>
+						<li><a href="#three"><p class="animated fadeInRight">Contact</p></a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/company/78048587/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.instagram.com/cubebooks/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="mailto:cubebooks.netlify@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://twitter.com/cube_books" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!--One -->
+						<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..." title="Type in a name">
+						<div class="container">
+							<div class="table-wrapper">
+								<table id="myTable">	
+									<thead section id="one">
+										<tr>
+											<th><h3>CISCE</h3></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Place the book name here</td>
+											<td><a href="#place the drive link here" class="button primary icon solid fa-download">PDF</a></td>
+										</tr>
+									</tbody>
+									<br>	
+									<thead section id="two">
+										<tr>
+											<th><h3>CBSE</h3></th>	
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Place the book name here</td>
+											<td><a href="#place the drive link here" class="button primary icon solid fa-download">PDF</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+
+					
+					<!-- three --> 
+					<section id="three"> 
+						<div class="container"> 
+						<h3>Contact Us</h3> 
+						<textarea placeholder="Enter your message"></textarea> 
+						<input type="text" class="name" placeholder="Full Name"> 
+						<input type="text" class="email" placeholder="Email"/>
+						<button class="send" onclick="sendReq()">send</button> 
+						</div> 
+					</section> 
+					</div>
+
+				</div>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<ul class="copyright">
+							<li>&copy; CubeBooks 2022. All rights reserved.</li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/company/78048587/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.instagram.com/cubebooks/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="mailto:cubebooks.netlify@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://twitter.com/cube_books" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						</ul>
+					</div>
+				</section>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+		function myFunction() 
+		{
+			var input, filter, table, tr, td, i, txtValue;
+			input = document.getElementById("myInput");
+			filter = input.value.toUpperCase();
+			table = document.getElementById("myTable");
+			tr = table.getElementsByTagName("tr");
+			for (i = 0; i < tr.length; i++) 
+			{
+				td = tr[i].getElementsByTagName("td")[0];
+				if (td) 
+				{
+					txtValue = td.textContent || td.innerText;
+					if (txtValue.toUpperCase().indexOf(filter) > -1) 
+					{
+						tr[i].style.display = "";
+					} 
+					else 
+					{
+						tr[i].style.display = "none";
+					}
+				}       
+			}
+		}
+		</script>
+		<script>
+			function sendReq()
+			{
+				var name=document.getElementsByClassName("name")[0].value;
+				var msg=document.getElementsByTagName("textarea")[0].value;
+				var email=document.getElementsByClassName("email")[0].value;
+				if([name.length,msg.length,email.length].includes(0))
+				{
+					alert("you must fill all the fields");
+				}
+				else
+				{
+					msg="feedback from "+name+"\n"+email+" :\n"+msg;
+					var xhttp=new XMLHttpRequest();
+					xhttp.open("GET.html",encodeURI("https://api.telegram.org/bot1785343477:AAGfO1PIpAwAKUu8BF6IkIgUgoTxPTJo-a0/sendMessage?chat_id=-1001262147694&text="+msg),true);
+					xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+					xhttp.send();
+					document.getElementsByClassName("name")[0].value="";
+					document.getElementsByTagName("textarea")[0].value="";
+					document.getElementsByClassName("email")[0].value="";
+					alert("thank you for your feedback !");
+				}
+			}
+		</script>
+
+</body>
+
+<!-- Mirrored from cubebooks.github.io/Computer Papers.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jun 2022 04:39:08 GMT -->
+</html>
