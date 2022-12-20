@@ -1,0 +1,14 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 20 Jun 2022 10:08:45 at https://cubebooks.github.io/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://cubebooks.github.io/ -O1 "D:\test1\Test" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:09:03	Error: 	"Not Found" (404) at link https://cubebooks.github.io/animate.min.css (from https://cubebooks.github.io/)
+10:09:09	Error: 	"Not Found" (404) at link https://cubebooks.github.io/GET (from https://cubebooks.github.io/)
+10:10:20	Warning: 	Retry after error -4 (No data (connection closed)) at link code.jquery.com/mobile/1.4.5/images/icons-png/comment-white.png (from code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 41 seconds : 175 links scanned, 171 files written (4352125 bytes overall) [2043361 bytes received at 20231 bytes/sec], 3818263 bytes transferred using HTTP compression in 64 files, ratio 36%, 17.5 requests per connection
+(2 errors, 1 warnings, 0 messages)
